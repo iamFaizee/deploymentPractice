@@ -6,7 +6,7 @@ const app = express()
 
 
 app.get('/', (req,res) => {
-    res.json({success: "Welcome to Homepage", name: process.env.NAME})
+    res.json({success: `Welcome to Homepage ${process.env.NAME}`})
 })
 
 
